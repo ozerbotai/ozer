@@ -1,0 +1,111 @@
+<div
+    class="offcanvas offcanvas-end offcanvas-data-form"
+    tabindex="-1"
+    id="offcanvasEditContact"
+    aria-labelledby="config-title-editContactEditForm"
+    >
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title h5" id="config-title-editContactEditForm">
+        </h5>
+        <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Cerrar"
+        >
+        <span class="material-symbols-outlined" aria-hidden="true">
+            close
+        </span>
+        </button>
+    </div>
+    <div class="offcanvas-body">
+        <form action="" class="dataForm" id="editContactForm">
+        <div>
+            <div class="edit-form-name">
+            <p class="body-2 mb-1" id="config-paragraph-contactName"></p>
+            <p id="edit-contact-exception-id" style="display: none;"></p>
+            <p id="edit-contact-phone" style="display: none;"></p>
+            <p id="edit-contact-name" class="body-2 mb-0 fw-bold"></p>
+            </div>
+            <div class="body-2">
+            <p class="form-subtitle" id="config-paragraph-transcriptionModeContactsEditForm">
+            </p>
+            <div class="form-check"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-i18n-key="config-paragraph-edit-contact-mode-respond-Tooltip"
+                data-bs-custom-class="custom-tooltip">
+                <input
+                class="form-check-input"
+                type="radio"
+                name="editContactRadio"
+                id="editContactRadioRespond"
+                aria-describedby="config-paragraph-contactRadioFeedbackContactsEditForm"
+                />
+                <label
+                class="form-check-label"
+                for="editContactRadioRespond"
+                id="config-label-transcribeSameChatContactsEditForm"
+                >
+                </label>
+            </div>
+            <div class="form-check"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-i18n-key="config-paragraph-edit-contact-mode-private-Tooltip"
+                data-bs-custom-class="custom-tooltip">
+                <input
+                class="form-check-input"
+                type="radio"
+                name="editContactRadio"
+                id="editContactRadioPrivate"
+                aria-describedby="config-paragraph-contactRadioFeedbackContactsEditForm"
+                />
+                <label
+                class="form-check-label"
+                for="editContactRadioPrivate"
+                id="config-label-transcribePrivateChatContactsEditForm"
+                >
+                </label>
+            </div>
+            <div class="form-check"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-i18n-key="config-paragraph-edit-contact-mode-off-Tooltip"
+                data-bs-custom-class="custom-tooltip">
+                <input
+                class="form-check-input"
+                type="radio"
+                name="editContactRadio"
+                id="editContactRadioOff"
+                aria-describedby="config-paragraph-contactRadioFeedbackContactsEditForm"
+                />
+                <label
+                class="form-check-label"
+                for="editContactRadioOff"
+                id="config-label-notTranscribeContactsEditForm"
+                >
+                </label>
+                <p
+                class="invalid-feedback"
+                id="config-paragraph-contactRadioFeedbackContactsEditForm"
+                >
+                </p>
+            </div>
+            </div>
+            <div id="contacteditoffcanvasSpinner" class="spinner-border text-primary" role="status"
+                style="display: none; position: absolute; top: 50%; left: 50%; z-index: 9999;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <div class="text-end">
+            <button class="btn btn-lg btn-primary" type="submit" id="config-button-saveChangesContactsEditForm"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-i18n-key="config-button-editContactForm-Tooltip"
+                data-bs-custom-class="custom-tooltip">
+            </button>
+        </div>
+        </form>
+    </div>
+</div>

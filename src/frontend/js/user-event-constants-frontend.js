@@ -1,0 +1,2 @@
+const EVENT_USER_ENTERED_CONFIG = 'user_entered_config'
+const EVENT_USER_ENTERED_THE_CONNECT_SCREEN = 'user_entered_the_connect_screeen'

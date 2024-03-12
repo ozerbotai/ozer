@@ -1,0 +1,53 @@
+{
+  "name": "ozer",
+  "version": "1.0.0",
+  "description": "Whatsapp productivity tool",
+  "main": "src/backend/express-index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozerbotai/ozer.git"
+  },
+  "keywords": [
+    "whatsapp",
+    "whatsapp-web"
+  ],
+  "author": "Ozer",
+  "license": "Apache-2.0",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/ozerbotai/ozer/issues"
+  },
+  "homepage": "https://github.com/ozerbotai/ozer#readme",
+  "dependencies": {
+    "@ozerbotai/baileys": "^6.7.9-ozer-1",
+    "@mailchimp/mailchimp_marketing": "^3.0.80",
+    "@mailchimp/mailchimp_transactional": "^1.0.59",
+    "@supabase/supabase-js": "^2.39.8",
+    "better-sqlite3": "^11.1.2",
+    "common-tags": "^1.8.2",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.1",
+    "express-session": "^1.18.0",
+    "fs": "^0.0.1-security",
+    "helmet": "^8.0.0",
+    "https": "^1.0.0",
+    "i18next": "^23.11.3",
+    "openai": "^4.28.4",
+    "passport": "^0.7.0",
+    "passport-google-oauth": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "npmScopes": {
+    "@ozerbotai": {
+      "registry": "https://npm.pkg.github.com"
+    }
+  }  
+}

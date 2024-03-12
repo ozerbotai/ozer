@@ -1,0 +1,116 @@
+@media screen and (max-width: 992px) {
+  .install-section {
+    margin: 0;
+  }
+  .install-section__item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.nav-sections {
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  background-color: var(--white);
+}
+.nav-sections ol {
+  padding-left: 1rem;
+}
+.section-qr {
+  display: flex;
+  justify-content: center;
+  padding: 2.75rem 1.5rem;
+}
+.section-authcode {
+  margin-bottom: 1rem;
+  background-color: var(--white);
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+.section-authcode .authcode {
+  display: inline-block;
+  border: none;
+  font-weight: 200;
+  font-size: 48px;
+  line-height: 57.6px;
+  width: 100%;
+  border-radius: 1rem;
+  text-align: center;
+  min-height: 58px;
+}
+.section-authcode .authcode_label {
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  font-size: var(--font-size-body-2);
+  line-height: var(--line-height-body-2);
+}
+@media screen and (min-width: 992px) {
+  .section-qr,
+  .section-authcode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border-radius: 1rem;
+    height: 100%;
+  }
+  .section-qr {
+    padding: 1.5rem;
+  }
+  .section-authcode {
+    margin-bottom: 0;
+    min-height: 77px;
+    flex-direction: column;
+  }
+  .section-authcode .authcode {
+    min-height: 77px;
+    padding: 0;
+    line-height: 77px;
+  }
+  .section-authcode .authcode_label {
+    font-weight: 400;
+    font-size: var(--font-size-body-1);
+    line-height: var(--line-height-body-1);
+  }
+}
+
+.custom-loading-spacer {
+  margin-top: 120px;
+}
+@media (min-width: 992px) {
+  .custom-loading-spacer {
+    margin-top: 192px;
+  }
+}
+@media (min-width: 992px) {
+  .install-subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+}
+
+.ul-list-ozer {
+  list-style-type: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.ul-list-ozer li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.li-list-ozer {
+  display: flex;
+}
+
+#qrcode img {
+  width: 162px;
+  height: 162px;
+}
+@media (min-width: 992px) {
+  #qrcode img {
+    width: 216px;
+    height: 216px;
+  }
+}

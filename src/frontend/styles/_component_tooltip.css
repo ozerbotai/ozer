@@ -1,0 +1,10 @@
+.custom-tooltip {
+  z-index: 9999;
+  --bs-tooltip-bg: var(--bs-body-color);
+  opacity: 1;
+  --bs-tooltip-color: var(--bs-white);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: var(--font-size-body-2);
+  line-height: var(--line-height-body-2);
+}

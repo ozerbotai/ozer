@@ -1,0 +1,42 @@
+{
+    "IN_THE_GROUP": 
+    "בקבוצה",
+        "AUDIO_SENT_BY_ME": 
+    "שלחתי הודעה קולית",
+        "TEXT_SENT_BY_ME": 
+    "טקסט שנשלח על ידי",
+        "AUDIO_RECEIVED_FROM": 
+    "הודעה קולית שהתקבלה מ",
+        "TEXT_RECEIVED_FROM": 
+    "טקסט התקבל מ",
+        "TRANSCRIBE_ON_MESSAGE_FOR_CONTACTS": 
+    "שלום! אני עוֹזֵר , מערכת תמלול אוטומטית להמרת הודעות קוליות בוואטסאפ לטקסט. מעתה, כל ההודעות הקוליות יתומללו אוטומטית.",
+        "TRANSCRIBE_OFF_MESSAGE_FOR_CONTACTS": 
+    "מעתה ואילך, הודעות אודיו לא יועתקו יותר.",
+        "TRANSCRIBE_PRIVATE_MESSAGE_FOR_CONTACTS": 
+    "מעתה ואילך, הודעות אודיו לא יועתקו יותר פה.",
+        "TRANSCRIBE_SAME_MODE": 
+    "צ'אט זה כבר אפשר את המצב הזה בעבר, הוא ימשיך לעבוד באותו אופן!",
+        "TRANSCRIBED_AUDIO_MESSAGE": 
+    "הודעה תומללה",
+        "COMPLETE_TEXT": 
+    "טקסט מלא",
+        "MESSAGE_SUMMARY": 
+    "תקציר",
+        "SUMMARY": 
+    "תקציר",
+        "PHONE_NOT_AUTHORIZED":
+     "טלפון לא מורשה.",
+        "PHONE_ALREADY_CONNECTED": 
+    "טלפון כבר מחובר.",
+        "CONTACT_RECEIVED":
+     "קשר נקלט",
+        "TRANSCRIPTION_NOT_AVAILABLE":
+     "שגיאה בניסיון להתחבר למנוע התמלול.",
+        "GPT_RESPONSE_GENERATED":
+     "",
+     "AUDIO_IS_LONGER_THAN_MAX":
+    "ההודעה לא תומללה כי היא חורגת מהמקסימום של",
+    "MINUTES":
+    "דקות"
+}

@@ -1,0 +1,199 @@
+.waitlistForm {
+  font-weight: 400;
+  font-size: var(--font-size-body-2);
+  line-height: var(--line-height-body-2);
+}
+.waitlistForm .waitlistForm__label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+.waitlistForm .form-control {
+  font-weight: 400;
+  font-size: var(--font-size-body-1);
+  line-height: var(--line-height-body-1);
+}
+.pe-custom-col {
+  padding-right: 14px;
+}
+/* Select custom */
+.custom-select {
+  position: static;
+}
+@media screen and (min-width: 992px) {
+  .custom-select {
+    position: relative;
+  }
+}
+/*Se oculta elemento select */
+.custom-select select {
+  display: none;
+}
+
+.select-selected {
+  padding: 1rem 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  width: 100%;
+  appearance: none;
+  background-color: var(--white);
+  font-weight: 400;
+  font-size: var(--font-size-body-2);
+  line-height: var(--line-height-body-2);
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: inset 0 0 0 1px var(--border-primary-color);
+  color: var(--bs-body-color);
+  cursor: pointer;
+}
+
+.select-selected:focus {
+  box-shadow: 0 0 0 0.125rem var(--btn-primary-border-focus);
+  outline-color: transparent;
+}
+
+/* Estilo de flecha dentro de 'botón': */
+.select-selected:after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="%231E2024"><path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/></svg>');
+}
+
+/* Estilos de items (options), y selected item: */
+.select-items div {
+  color: var(--bs-body-color);
+  padding: 1rem 0.75rem;
+  cursor: pointer;
+}
+.select-items div:focus {
+  box-shadow: inset 0 0 0 0.125rem var(--btn-primary-color);
+  outline-color: transparent;
+  border-radius: 0.5rem;
+}
+
+/* Estilos de items (options): */
+.select-items {
+  position: absolute;
+  background-color: var(--white);
+  box-shadow: 0 0 0 1px var(--border-primary-color);
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  width: 328px;
+  border-radius: 0.5rem;
+  font-weight: 400;
+  font-size: var(--font-size-body-1);
+  line-height: var(--line-height-body-1);
+  padding: 1rem;
+  max-height: 328px;
+  overflow-y: auto;
+  margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 992px) {
+  .select-items {
+    position: absolute;
+    background-color: var(--white);
+    top: 100%;
+    right: 0;
+    left: unset;
+    transform: unset;
+    z-index: 99;
+    width: 140px;
+    max-height: 300px;
+  }
+  .select-items div {
+    padding: 0.75rem;
+  }
+}
+/* No mostrar items cuando la caja para seleccionar este cerrada */
+.select-hide {
+  display: none;
+}
+div.select-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 0;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.25rem;
+}
+.select-title .btn-close {
+  background-image: none;
+  color: var(--bs-body-color);
+  opacity: 1;
+  padding: 0;
+  margin-right: 0;
+  margin-top: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.select-title .btn-close:focus {
+  box-shadow: inset 0 0 0 0.25rem var(--btn-primary-border-focus);
+}
+div.select-title:hover {
+  background-color: var(--white);
+}
+@media screen and (min-width: 992px) {
+  div.select-title {
+    display: none;
+  }
+  .select-items {
+    padding: 0;
+  }
+}
+.select-items div:hover {
+  background-color: #f3f3f3;
+}
+.same-as-selected {
+  background-color: #ececec;
+}
+.select-items div:nth-child(2):hover,
+.select-items div:nth-child(2).same-as-selected {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.select-items div:last-child:hover,
+.select-items div:last-child.same-as-selected {
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.select-items div:focus,
+.select-items div:focus-visible {
+  box-shadow: inset 0 0 0 0.25rem var(--btn-primary-border-focus);
+  border-radius: 0.5rem;
+  outline: none;
+}
+.select-items div:focus:hover,
+.select-items div:focus-visible:hover {
+  border-radius: 0.5rem;
+}
+
+/* Estilos para el backdrop */
+@media screen and (max-width: 992px) {
+  .backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30, 32, 36, 0.25);
+    z-index: 98;
+  }
+}
+/* Validacion del input select */
+.custom-select.is-invalid .select-selected {
+  box-shadow: inset 0 0 0 1px var(--danger-bg-color);
+}
+/* Input Number  */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

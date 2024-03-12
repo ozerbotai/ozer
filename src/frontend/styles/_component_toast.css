@@ -1,0 +1,96 @@
+.toast-container-position {
+  position: relative;
+  padding-bottom: 1.5rem;
+  max-width: 328px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .toast-container-position {
+    max-width: unset;
+  }
+}
+@media (min-width: 992px) {
+  .toast-container-position {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+  }
+}
+.custom-toast {
+  z-index: 0;
+  margin: 0;
+  position: static;
+  width: 100%;
+  max-width: 328px;
+}
+@media (min-width: 992px) {
+  .custom-toast {
+    margin: 0;
+    width: unset;
+    max-width: unset;
+  }
+}
+.custom-toast .toast {
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: var(--white);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.5rem auto 0;
+  width: 100%;
+  font-weight: 400;
+  font-size: var(--font-size-body-2);
+  line-height: var(--line-height-body-2);
+}
+.custom-toast .toast.show {
+  display: flex;
+}
+@media (min-width: 992px) {
+  .custom-toast .toast.show {
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+}
+.custom-toast .toast .toast-content__text {
+  flex-grow: 1;
+  margin-left: -0.5rem;
+}
+.custom-toast .toast .btn-close {
+  background-image: none;
+  padding: 0;
+  margin-right: 0;
+  margin-top: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  opacity: 1;
+  position: relative;
+  z-index: 0;
+}
+
+/* Toast success */
+.custom-toast .toast.toast-success {
+  box-shadow: 0 0 0 0.125rem var(--success-border-color);
+  color: var(--success-text-color);
+}
+.custom-toast .toast.toast-success .material-symbols-outlined {
+  color: var(--success-bg-color);
+}
+.custom-toast .toast.toast-success .btn-close .material-symbols-outlined {
+  color: var(--success-text-color);
+}
+/* Toast danger */
+.custom-toast .toast.toast-danger {
+  box-shadow: 0 0 0 0.125rem var(--danger-border-color);
+  color: var(--danger-text-color);
+}
+.custom-toast .toast.toast-danger .material-symbols-outlined {
+  color: var(--danger-bg-color);
+}
+.custom-toast .toast.toast-danger .btn-close .material-symbols-outlined {
+  color: var(--danger-text-color);
+}

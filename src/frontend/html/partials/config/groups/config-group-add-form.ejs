@@ -1,0 +1,120 @@
+<div
+    class="offcanvas offcanvas-end offcanvas-data-form"
+    tabindex="-1"
+    id="offcanvasAddGroup"
+    aria-labelledby="config-title-addGroupAddForm"
+    >
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title h5" id="config-title-addGroupAddForm"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            data-i18n-key="config-add-group-title-Tooltip"
+            data-bs-custom-class="custom-tooltip">
+        </h5>
+        <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Cerrar"
+        >
+        <span class="material-symbols-outlined" aria-hidden="true">
+            close
+        </span>
+        </button>
+    </div>
+    <div class="offcanvas-body">
+        <form action="" class="dataForm" id="addGroupForm">
+        <div>
+            <!-- Group Search Start -->
+            <div class="nameData">
+            <label 
+                for="groupSearchInput" 
+                class="form-label body-2"
+                id="config-label-groupName"
+                >
+            </label>
+            <input
+                type="search"
+                class="form-control"
+                id="groupSearchInput"
+                aria-describedby="groupSearchInputFeedback"
+                autocomplete="off"
+            />
+            <div
+                id="suggestionsContainerGroup"
+                class="suggestions"
+            ></div>
+            <p
+                class="invalid-feedback"
+                id="groupSearchInputFeedback"
+            >
+            </p>
+            </div>
+            <!-- Group Search End -->
+            <div class="body-2">
+            <p class="form-subtitle" id="config-paragraph-transcriptionModeGroupsAddForm">
+            </p>
+            <div class="form-check"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-i18n-key="config-paragraph-add-group-mode-respond-Tooltip"
+                data-bs-custom-class="custom-tooltip">
+                <input
+                class="form-check-input"
+                type="radio"
+                name="addGroupRadio"
+                id="addGroupRadioRespond"
+                aria-describedby="config-paragraph-groupRadioFeedbackGroupsAddForm"
+                />
+                <label class="form-check-label" for="addGroupRadioRespond" id="config-label-transcribeSameChatGroupsAddForm">
+                </label>
+            </div>
+            <div class="form-check"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-i18n-key="config-paragraph-add-group-mode-private-Tooltip"
+                data-bs-custom-class="custom-tooltip">
+                <input
+                class="form-check-input"
+                type="radio"
+                name="addGroupRadio"
+                id="addGroupRadioPrivate"
+                aria-describedby="config-paragraph-groupRadioFeedbackGroupsAddForm"
+                />
+                <label class="form-check-label" for="addGroupRadioPrivate" id="config-label-transcribePrivateChatGroupsAddForm">
+                </label>
+            </div>
+            <div class="form-check"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-i18n-key="config-paragraph-add-group-mode-off-Tooltip"
+                data-bs-custom-class="custom-tooltip">
+                <input
+                class="form-check-input"
+                type="radio"
+                name="addGroupRadio"
+                id="addGroupRadioOff"
+                aria-describedby="config-paragraph-groupRadioFeedbackGroupsAddForm"
+                />
+                <label class="form-check-label" for="addGroupRadioOff" id="config-label-notTranscribeGroupsAddForm">
+                </label>
+                <p class="invalid-feedback" id="config-paragraph-groupRadioFeedbackGroupsAddForm">
+                </p>
+            </div>
+            </div>
+            <div id="groupoffcanvasSpinner" class="spinner-border text-primary" role="status"
+                style="display: none; position: absolute; top: 50%; left: 50%; z-index: 9999;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <div class="text-end">
+            <button class="btn btn-lg btn-primary" type="submit" id="config-button-addGroupAddForm"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-i18n-key="config-button-addGroupForm-Tooltip"
+                data-bs-custom-class="custom-tooltip">
+            </button>
+        </div>
+        </form>
+    </div>
+</div>

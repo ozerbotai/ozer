@@ -1,0 +1,220 @@
+<div id="section-general-settings" class="col-12 col-lg-8 install-section__item mb-lg-3">
+    <div class="pb-0 rounded-0 rounded-lg-4">
+      <div class="config-header">
+        <h1 class="mb-3 h4" id="config-title-generalSettings"></h1>
+        <%- include('config-paused-transcriptions-alert') -%>
+        <hr class="sections-box__divisor custom-margin mt-4 mb-0" />
+      </div>
+
+      <!-- Form -->
+      <form class="body-2">
+        <div class="form-bg">
+          <p class="fw-bold mb-2" id="config-paragraph-contactTranscriptionMode"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-i18n-key="config-paragraph-contactTranscriptionModeTooltip"
+              data-bs-custom-class="custom-tooltip">
+          </p>
+          <div class="form-check" data-bs-toggle="tooltip" id="config-general-settings-contact-mode-respond"
+          data-bs-placement="top"
+          data-i18n-key="config-general-settings-contact-mode-respondTooltip"
+          data-bs-custom-class="custom-tooltip">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioContact"
+              id="flexRadioContactModeRespond"
+            />
+            <label class="form-check-label" for="flexRadioContactModeRespond" id="config-label-contactModeRespond">
+            </label>
+          </div>
+          <div class="form-check" data-bs-toggle="tooltip" id="config-general-settings-contact-mode-private"
+          data-bs-placement="top"
+          data-i18n-key="config-general-settings-contact-mode-privateTooltip"
+          data-bs-custom-class="custom-tooltip">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioContact"
+              id="flexRadioContactModePrivate"
+            />
+            <label class="form-check-label" for="flexRadioContactModePrivate" id="config-label-contactModePrivate">
+            </label>
+          </div>
+          <div class="form-check" data-bs-toggle="tooltip" id="config-general-settings-contact-mode-off"
+          data-bs-placement="top"
+          data-i18n-key="config-general-settings-contact-mode-offTooltip"
+          data-bs-custom-class="custom-tooltip">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioContact"
+              id="flexRadioContactModeOff"
+            />
+            <label class="form-check-label" for="flexRadioContactModeOff" id="config-label-contactModeOff">
+            </label>
+          </div>
+          <p class="fw-bold mb-2 mt-4" id="config-paragraph-groupTranscriptionMode"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            data-i18n-key="config-paragraph-groupTranscriptionModeTooltip"
+            data-bs-custom-class="custom-tooltip">
+          </p>
+          <div class="form-check" data-bs-toggle="tooltip" id="config-general-settings-group-mode-respond"
+          data-bs-placement="top"
+          data-i18n-key="config-general-settings-group-mode-respondTooltip"
+          data-bs-custom-class="custom-tooltip">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioGroup"
+              id="flexRadioGroupModeRespond"
+            />
+            <label class="form-check-label" for="flexRadioGroupModeRespond" id="config-label-groupModeRespond">
+            </label>
+          </div>
+          <div class="form-check" data-bs-toggle="tooltip" id="config-general-settings-group-mode-private"
+          data-bs-placement="top"
+          data-i18n-key="config-general-settings-group-mode-privateTooltip"
+          data-bs-custom-class="custom-tooltip">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioGroup"
+              id="flexRadioGroupModePrivate"
+            />
+            <label class="form-check-label" for="flexRadioGroupModePrivate" id="config-label-groupModePrivate">
+            </label>
+          </div>
+          <div class="form-check" data-bs-toggle="tooltip" id="config-general-settings-group-mode-off"
+          data-bs-placement="top"
+          data-i18n-key="config-general-settings-group-mode-offTooltip"
+          data-bs-custom-class="custom-tooltip">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioGroup"
+              id="flexRadioGroupModeOff"
+            />
+            <label class="form-check-label" for="flexRadioGroupModeOff" id="config-label-groupModeOff">
+            </label>
+          </div>
+          <p class="fw-bold mb-2 mt-4" id="config-paragraph-outgoingVoiceMessages"></p>
+          <div class="form-check" data-bs-toggle="tooltip" id="config-general-settings-outgoing-messages"
+          data-bs-placement="top"
+          data-i18n-key="config-general-settings-outgoing-messagesTooltip"
+          data-bs-custom-class="custom-tooltip">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="flexRadioOutgoing"
+              id="flexRadioOutgoingMessages"
+            />
+            <label class="form-check-label" for="flexRadioOutgoingMessages" id="config-label-outgoingVoiceMessagesTranscription">
+            </label>
+          </div>
+          <p class="fw-bold mb-2 mt-4" id="config-paragraph-summarize-messages"></p>
+          <div class="form-check" data-bs-toggle="tooltip" id="config-general-settings-summarize-messages"
+          data-bs-placement="top"
+          data-i18n-key="config-general-settings-summarize-messagesTooltip"
+          data-bs-custom-class="custom-tooltip">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="flexRadioSummarize"
+              id="flexRadioSummarizeMessages"
+            />
+            <label class="form-check-label" for="flexRadioSummarizeMessages" id="config-label-SummarizeMessages">
+            </label>
+          </div>
+        </div>
+
+        <div class="form-footer">
+          <!-- Toast -->
+          <div class="toast-container-position">
+            <div class="toast-container custom-toast">
+              <!-- Success Toast Config -->
+              <div
+                id="successConfigToast"
+                class="toast toast-success"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <span
+                  class="material-symbols-outlined"
+                  aria-hidden="true"
+                >
+                  check_circle
+                </span>
+                <span class="toast-content__text" id="config-span-settingsSavedSuccess"
+                  ></span
+                >
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="toast"
+                  aria-label="Cerrar"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    aria-hidden="true"
+                  >
+                    close
+                  </span>
+                </button>
+              </div>
+              <!-- Success Toast Config End -->
+
+              <!-- Danger Toast -->
+              <!-- <div
+                id="dangerConfigToast"
+                class="toast toast-danger"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <span
+                class="material-symbols-outlined"
+                aria-hidden="true"
+                >
+                error
+                </span>
+                <span class="toast-content__text"
+                >Ha ocurrido un error, intenta nuevamente</span
+                >
+                <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="toast"
+                aria-label="Cerrar"
+                >
+                <span
+                    class="material-symbols-outlined"
+                    aria-hidden="true"
+                >
+                    close
+                </span>
+                </button>
+              </div> -->
+              <!-- Danger Toast End -->
+            </div>
+          </div>
+          <!-- Toast End -->
+          <div class="box-btn-mobile">
+            <div id="configGeneralSettingsSpinner" class="spinner-border text-primary" role="status"
+                style="display: none; position: absolute; bottom: 3%; left: 50%; z-index: 9999;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary btn-lg w-100 w-sm-auto ms-sm-auto"
+              id="config-button-saveChanges"
+            >
+            </button>
+          </div>
+        </div>
+      </form>
+      <!-- Form End-->
+    </div>
+  </div>

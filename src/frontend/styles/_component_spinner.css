@@ -1,0 +1,5 @@
+.spinner-border.text-primary {
+  color: var(--btn-primary-color) !important;
+  width: 2.5rem;
+  height: 2.5rem;
+}

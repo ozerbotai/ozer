@@ -1,0 +1,135 @@
+<header>
+    <nav class="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="../../../img/logo.svg" alt="Ozer.bot" />
+        </a>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasHeader"
+          aria-controls="offcanvasHeader"
+          aria-label="Menu"
+        >
+          <span class="material-symbols-outlined" aria-hidden="true">
+            menu
+          </span>
+        </button>
+        <div
+          class="offcanvas-lg offcanvas-end"
+          tabindex="-1"
+          id="offcanvasHeader"
+          aria-labelledby="offcanvasHeaderLabel"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              data-bs-target="#offcanvasHeader"
+              aria-label="Close"
+            >
+              <span class="material-symbols-outlined" aria-hidden="true">
+                close
+              </span>
+            </button>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+              <div class="offcanvas-container-top">
+                <% if (completeHeader) { %>
+                <a href="/commands" class="offcanvas-link"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  data-i18n-key="header-link-commands-Tooltip"
+                  data-bs-custom-class="custom-tooltip">
+                  <div class="offcanvas-link__text">
+                    <span
+                      class="material-symbols-outlined"
+                      aria-hidden="true"
+                    >
+                      keyboard_command_key
+                    </span>
+                    <span id="header-span-commands"></span>
+                  </div>
+                  <span
+                    class="material-symbols-outlined d-lg-none"
+                    aria-hidden="true"
+                  >
+                    chevron_right
+                  </span>
+                </a>
+                <hr />
+                <a href="/help" class="offcanvas-link"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  data-i18n-key="header-link-help-Tooltip"
+                  data-bs-custom-class="custom-tooltip">
+                  <div class="offcanvas-link__text">
+                    <span
+                      class="material-symbols-outlined"
+                      aria-hidden="true"
+                    >
+                      help
+                    </span>
+                    <span id="header-span-help"></span>
+                  </div>
+                  <span
+                    class="material-symbols-outlined d-lg-none"
+                    aria-hidden="true"
+                  >
+                    chevron_right
+                  </span>
+                </a>
+                <% } %>
+                <hr />
+               <!--  Language dropdown start -->
+                <div class="dropdown">
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    id="dropdownLanguageButton"
+                  >
+                    <div class="offcanvas-link__text">
+                      <span
+                        class="material-symbols-outlined d-lg-none"
+                        aria-hidden="true"
+                      >
+                        language
+                      </span>
+                      <span id="dropdownLanguageButtonText"></span>
+                    </div>
+                    <span
+                      class="material-symbols-outlined btn-dropdown-icon"
+                      aria-hidden="true"
+                    >
+                      expand_more
+                    </span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownLanguageButton" id="languageDropdownMenu">
+                  </ul>
+                </div>
+                <!--  Language dropdown end -->
+              </div>
+            </div>
+
+            <div class="offcanvas-container-bottom"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-i18n-key="header-link-logout-Tooltip"
+              data-bs-custom-class="custom-tooltip">
+              <button id="headerButtonLogout" class="offcanvas-logout" aria-label="Cerrar sesión">
+                <span class="d-lg-none" id="header-span-logout"></span>
+                <span class="material-symbols-outlined" aria-hidden="true">
+                  logout
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>

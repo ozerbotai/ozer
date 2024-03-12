@@ -1,0 +1,6 @@
+.alert-info {
+  --bs-alert-bg: var(--info-secondary-bg-color);
+  --bs-alert-border: 2px solid var(--info-border-color);
+  --bs-alert-border-color: var(--info-border-color);
+  justify-content: space-between;
+}

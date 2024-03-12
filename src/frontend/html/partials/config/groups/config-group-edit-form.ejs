@@ -1,0 +1,99 @@
+<div
+    class="offcanvas offcanvas-end offcanvas-data-form"
+    tabindex="-1"
+    id="offcanvasEditGroup"
+    aria-labelledby="config-title-editGroupEditForm"
+    >
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title h5" id="config-title-editGroupEditForm">
+        </h5>
+        <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Cerrar"
+        >
+        <span class="material-symbols-outlined" aria-hidden="true">
+            close
+        </span>
+        </button>
+    </div>
+    <div class="offcanvas-body">
+        <form action="" class="dataForm" id="editGroupForm">
+        <div>
+            <div class="edit-form-name">
+            <p class="body-2 mb-1" id="config-paragraph-groupName"></p>
+            <p id="edit-group-exception-id" style="display: none;"></p>
+            <p id="edit-group-id" style="display: none;"></p>            
+            <p id="edit-group-name" class="body-2 mb-0 fw-bold"></p>
+            </div>
+            <div class="body-2">
+            <p class="form-subtitle" id="config-paragraph-transcriptionModeGroupsEditForm">
+            </p>
+            <div class="form-check"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-i18n-key="config-paragraph-edit-group-mode-respond-Tooltip"
+                data-bs-custom-class="custom-tooltip">
+                <input
+                class="form-check-input"
+                type="radio"
+                name="editGroupRadio"
+                id="editGroupRadioRespond"
+                aria-describedby="config-paragraph-groupRadioFeedbackGroupsEditForm"
+                />
+                <label class="form-check-label" for="editGroupRadioRespond" id="config-label-transcribeSameChatGroupsEditForm">
+                </label>
+            </div>
+            <div class="form-check"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-i18n-key="config-paragraph-edit-group-mode-private-Tooltip"
+                data-bs-custom-class="custom-tooltip">
+                <input
+                class="form-check-input"
+                type="radio"
+                name="editGroupRadio"
+                id="editGroupRadioPrivate"
+                aria-describedby="config-paragraph-groupRadioFeedbackGroupsEditForm"
+                />
+                <label class="form-check-label" for="editGroupRadioPrivate" id="config-label-transcribePrivateChatGroupsEditForm">
+                </label>
+            </div>
+            <div class="form-check"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-i18n-key="config-paragraph-edit-group-mode-off-Tooltip"
+                data-bs-custom-class="custom-tooltip">
+                <input
+                class="form-check-input"
+                type="radio"
+                name="editGroupRadio"
+                id="editGroupRadioOff"
+                aria-describedby="config-paragraph-groupRadioFeedbackGroupsEditForm"
+                />
+                <label class="form-check-label" for="editGroupRadioOff" id="config-label-notTranscribeGroupsEditForm">
+                </label>
+                <p
+                class="invalid-feedback"
+                id="config-paragraph-groupRadioFeedbackGroupsEditForm"
+                >
+                </p>
+            </div>
+            </div>
+            <div id="groupeditoffcanvasSpinner" class="spinner-border text-primary" role="status"
+                style="display: none; position: absolute; top: 50%; left: 50%; z-index: 9999;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <div class="text-end">
+            <button class="btn btn-lg btn-primary" type="submit" id="config-button-saveChangesGroupsEditForm"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-i18n-key="config-button-editGroupForm-Tooltip"
+                data-bs-custom-class="custom-tooltip">
+            </button>
+        </div>
+        </form>
+    </div>
+</div>

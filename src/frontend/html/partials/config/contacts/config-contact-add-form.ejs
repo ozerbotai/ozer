@@ -1,0 +1,120 @@
+<div
+    class="offcanvas offcanvas-end offcanvas-data-form"
+    tabindex="-1"
+    id="offcanvasAddContact"
+    aria-labelledby="config-title-addContactAddForm"
+    >
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title h5" id="config-title-addContactAddForm"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            data-i18n-key="config-add-contact-title-Tooltip"
+            data-bs-custom-class="custom-tooltip">
+        </h5>
+        <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Cerrar"
+        >
+        <span class="material-symbols-outlined" aria-hidden="true">
+            close
+        </span>
+        </button>
+    </div>
+    <div class="offcanvas-body">
+        <form action="" class="dataForm" id="addContactForm">
+        <div>
+            <!-- Contact Search Start -->
+            <div class="nameData">
+            <label
+                for="contactSearchInput"
+                class="form-label body-2"
+                id="config-label-contactName"
+                >
+            </label>
+            <input
+                type="search"
+                class="form-control"
+                id="contactSearchInput"
+                aria-describedby="contactSearchInputFeedback"
+                autocomplete="off"
+            />
+            <div
+                id="suggestionsContainerContact"
+                class="suggestions"
+            ></div>
+            <p
+                class="invalid-feedback"
+                id="contactSearchInputFeedback"
+            >
+            </p>
+            </div>
+            <!-- Contact Search End -->
+            <div class="body-2">
+            <p class="form-subtitle" id="config-paragraph-transcriptionModeContactsAddForm">
+            </p>
+            <div class="form-check"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-i18n-key="config-paragraph-add-contact-mode-respond-Tooltip"
+                data-bs-custom-class="custom-tooltip">
+                <input
+                class="form-check-input"
+                type="radio"
+                name="addContactRadio"
+                id="addContactRadioRespond"
+                aria-describedby="config-paragraph-contactRadioFeedbackContactsAddForm"
+                />
+                <label class="form-check-label" for="addContactRadioRespond" id="config-label-transcribeSameChatContactsAddForm">
+                </label>
+            </div>
+            <div class="form-check"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            data-i18n-key="config-paragraph-add-contact-mode-private-Tooltip"
+            data-bs-custom-class="custom-tooltip">
+                <input
+                class="form-check-input"
+                type="radio"
+                name="addContactRadio"
+                id="addContactRadioPrivate"
+                aria-describedby="config-paragraph-contactRadioFeedbackContactsAddForm"
+                />
+                <label class="form-check-label" for="addContactRadioPrivate" id="config-label-transcribePrivateChatContactsAddForm">
+                </label>
+            </div>
+            <div class="form-check"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            data-i18n-key="config-paragraph-add-contact-mode-off-Tooltip"
+            data-bs-custom-class="custom-tooltip">
+                <input
+                class="form-check-input"
+                type="radio"
+                name="addContactRadio"
+                id="addContactRadioOff"
+                aria-describedby="config-paragraph-contactRadioFeedbackContactsAddForm"
+                />
+                <label class="form-check-label" for="addContactRadioOff" id="config-label-notTranscribeContactsAddForm">
+                </label>
+                <p class="invalid-feedback" id="config-paragraph-contactRadioFeedbackContactsAddForm">
+                </p>
+            </div>
+            </div>
+            <div id="contactoffcanvasSpinner" class="spinner-border text-primary" role="status"
+                style="display: none; position: absolute; top: 50%; left: 50%; z-index: 9999;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <div class="text-end">
+            <button class="btn btn-lg btn-primary" type="submit" id="config-button-addContactAddForm"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-i18n-key="config-button-addContactForm-Tooltip"
+                data-bs-custom-class="custom-tooltip">
+            </button>
+        </div>
+        </form>
+    </div>
+    </div>

@@ -1,0 +1,184 @@
+<div id="section-summarization-settings" class="col-12 col-lg-8 install-section__item mb-lg-3">
+    <div class="pb-0 rounded-0 rounded-lg-4">
+      <div class="config-header">
+        <h1 class="mb-3 h4" id="config-title-summarizationSettings"></h1>
+        <p id="config-text-header-summarization" class="mb-0 mt-1 body-3 text-secondary"
+            data-bs-placement="top"
+            >
+        </p>
+        <hr class="sections-box__divisor custom-margin mt-4 mb-0" />
+      </div>
+
+      <!-- Form -->
+      <form class="body-2">
+        <div class="form-bg">
+          <div class="form-check" data-bs-toggle="tooltip" id="config-general-settings-summarize-messages2"
+          data-bs-placement="top"
+          data-i18n-key="config-general-settings-summarize-messagesTooltip2"
+          data-bs-custom-class="custom-tooltip">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="flexRadioSummarize"
+              id="flexRadioSummarizeMessages2"
+            />
+            <label class="form-check-label" for="flexRadioSummarizeMessages2" id="config-label-SummarizeMessages2">
+            </label>
+          </div>
+          <br>
+          <div class="form-group">
+            <b><label id="config-label-summarize-minimum-seconds" for="select-summarize-minimum-seconds"></label></b>
+            <select id="select-summarize-minimum-seconds" class="form-control">
+              <option id="config-30-seconds" value="30"></option>
+              <option id="config-60-seconds" value="60"></option>
+              <option id="config-90-seconds" value="90"></option>
+              <option id="config-120-seconds" value="120"></option>
+              <option id="config-180-seconds" value="180"></option>
+              <option id="config-240-seconds" value="240"></option>
+            </select>
+          </div>
+          <br>
+          <div class="form-group">
+            <b><label id="config-label-summarize-minimum-words" for="select-summarize-minimum-words"></label></b>
+            <select id="select-summarize-minimum-words" class="form-control">
+              <option id="config-100-words" value="100"></option>
+              <option id="config-150-words" value="150"></option>
+              <option id="config-200-words" value="200"></option>
+              <option id="config-250-words" value="250"></option>
+              <option id="config-300-words" value="300"></option>
+              <option id="config-400-words" value="400"></option>
+              <option id="config-500-words" value="500"></option>
+            </select>
+          </div>          
+          <p class="fw-bold mb-2 mt-4" id="config-paragraph-use-bullets"></p>
+          <div class="form-check" data-bs-toggle="tooltip" id="config-summarization-type-plain-text"
+          data-bs-placement="top"
+          data-i18n-key="config-summarization-type-plain-textTooltip"
+          data-bs-custom-class="custom-tooltip">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioSummaryType"
+              id="flexRadioSummaryTypePlainText"
+            />
+            <label class="form-check-label" for="flexRadioSummaryTypePlainText" id="config-label-summarization-type-plain-text">
+            </label>
+          </div>
+          <div class="form-check" data-bs-toggle="tooltip" id="config-summarization-type-plain-text"
+          data-bs-placement="top"
+          data-i18n-key="config-summarization-type-bulletsTooltip"
+          data-bs-custom-class="custom-tooltip">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioSummaryType"
+              id="flexRadioSummaryTypeBullets"
+            />
+            <label class="form-check-label" for="flexRadioSummaryTypeBullets" id="config-label-summarization-type-Bullets">
+            </label>
+          </div>
+          <p class="fw-bold mb-2 mt-4" id="config-paragraph-full-text"></p>
+          <div class="form-check" data-bs-toggle="tooltip" id="config-summarization-settings-full-text"
+          data-bs-placement="top"
+          data-i18n-key="config-summarization-settings-full-textTooltip"
+          data-bs-custom-class="custom-tooltip">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="flexRadioSummarize"
+              id="flexRadioFullText"
+            />
+            <label class="form-check-label" for="flexRadioFullText" id="config-label-full-text">
+            </label>
+          </div>
+        </div>
+
+        <div class="form-footer">
+          <!-- Toast -->
+          <div class="toast-container-position">
+            <div class="toast-container custom-toast">
+              <!-- Success Toast Config -->
+              <div
+                id="successConfigToastSummary"
+                class="toast toast-success"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <span
+                  class="material-symbols-outlined"
+                  aria-hidden="true"
+                >
+                  check_circle
+                </span>
+                <span class="toast-content__text" id="config-span-summarySettingsSavedSuccess"
+                  ></span
+                >
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="toast"
+                  aria-label="Cerrar"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    aria-hidden="true"
+                  >
+                    close
+                  </span>
+                </button>
+              </div>
+              <!-- Success Toast Config End -->
+
+              <!-- Danger Toast -->
+              <!-- <div
+                id="dangerConfigToast"
+                class="toast toast-danger"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <span
+                class="material-symbols-outlined"
+                aria-hidden="true"
+                >
+                error
+                </span>
+                <span class="toast-content__text"
+                >Ha ocurrido un error, intenta nuevamente</span
+                >
+                <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="toast"
+                aria-label="Cerrar"
+                >
+                <span
+                    class="material-symbols-outlined"
+                    aria-hidden="true"
+                >
+                    close
+                </span>
+                </button>
+              </div> -->
+              <!-- Danger Toast End -->
+            </div>
+          </div>
+          <!-- Toast End -->
+          <div class="box-btn-mobile">
+            <div id="configSummarizationSettingsSpinner" class="spinner-border text-primary" role="status"
+                style="display: none; position: absolute; bottom: 3%; left: 50%; z-index: 9999;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary btn-lg w-100 w-sm-auto ms-sm-auto"
+              id="config-button-summarization-saveChanges"
+            >
+            </button>
+          </div>
+        </div>
+      </form>
+      <!-- Form End-->
+    </div>
+  </div>

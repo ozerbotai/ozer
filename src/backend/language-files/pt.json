@@ -1,0 +1,22 @@
+{
+    "IN_THE_GROUP": "no grupo",
+    "AUDIO_SENT_BY_ME": "Áudio enviado por mim",
+    "TEXT_SENT_BY_ME": "Texto enviado por mim",
+    "AUDIO_RECEIVED_FROM": "Áudio recebido de",
+    "TEXT_RECEIVED_FROM": "Texto recebido de",
+    "TRANSCRIBE_ON_MESSAGE_FOR_CONTACTS": "Olá! Sou Ozer, um sistema de transcrição automática para converter mensagens de voz do WhatsApp em texto. A partir de agora, todos os áudios serão transcritos automaticamente.",
+    "TRANSCRIBED_AUDIO_MESSAGE": "Mensagem transcrita",
+    "TRANSCRIBE_OFF_MESSAGE_FOR_CONTACTS": "A partir de agora, as mensagens de áudio não serão mais transcritas.",
+    "TRANSCRIBE_PRIVATE_MESSAGE_FOR_CONTACTS": "A partir de agora, as mensagens de áudio não serão mais transcritas aqui.",
+    "TRANSCRIBE_SAME_MODE": "Este chat já tinha esse modo habilitado antes, continuará funcionando da mesma forma!",
+    "COMPLETE_TEXT": "Texto completo",
+    "MESSAGE_SUMMARY": "Resumo",
+    "SUMMARY": "Resumo",
+    "PHONE_NOT_AUTHORIZED": "Telefone não autorizado.",
+    "PHONE_ALREADY_CONNECTED": "Telefone já conectado.",
+    "CONTACT_RECEIVED": "Contato recebido",
+    "TRANSCRIPTION_NOT_AVAILABLE": "Erro ao tentar conectar ao motor de transcrição",
+    "GPT_RESPONSE_GENERATED": "",
+    "AUDIO_IS_LONGER_THAN_MAX": "A mensagem não foi transcrita porque excede o máximo de",
+    "MINUTES": "minutos."
+  }

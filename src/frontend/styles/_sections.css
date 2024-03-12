@@ -1,0 +1,26 @@
+@media screen and (min-width: 992px) {
+  .sections-custom-width {
+    max-width: 606px;
+  }
+}
+.sections-box {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+}
+@media screen and (min-width: 992px) {
+  .sections-box {
+    padding: 1.5rem;
+  }
+}
+.sections-box__divisor {
+  opacity: 1;
+  border: none;
+  height: 1px;
+  background-color: var(--bs-body-bg);
+}
+.sections-box__divisor.custom-margin {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
